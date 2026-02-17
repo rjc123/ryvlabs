@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+        <h1>{{ .Params.heading | default "Future-Proof Technology Transformation" }}</h1>
+        <p>{{ .Params.subheading | default "We design the systems that power tomorrow's enterprises." }}</p>
+        <a href="#services" class="btn">Explore Our Vision</a>
+    </div>
+</div>
+
+<section id="services" class="container services">
+    <div class="section-header">
+        <span class="section-label">Our Capabilities</span>
+        <h2>Designed for Impact</h2>
+    </div>
+    <div class="grid">
+        {{ range .Params.services }}
+        <div class="card">
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,109 +1,42 @@
 /* ... existing styles ... */
-/* Append to existing css */
 
-.hero-quote {
-    border-left: 2px solid var(--accent);
-    padding-left: 1.5rem;
-    margin: 2rem 0;
-    font-style: italic;
-    color: var(--text-secondary);
-}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem; /* Ensure consistent gutter on mobile */
+  }
 
-.hero-quote blockquote {
+  .hero h1 {
+    font-size: 2.5rem; /* Scale down hero text */
+  }
+
+  .hero p {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
+  }
+  
+  .services, .clients-section, .service-line {
+    padding: 3rem 0; /* Reduce vertical spacing on mobile */
+  }
 
-.hero-quote cite {
-    font-size: 0.9rem;
-    color: var(--accent);
-    font-style: normal;
-}
-
-.clients-section {
+  .contact-cta {
     padding: 4rem 0;
-    border-bottom: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.02);
-}
+  }
+  
+  .contact-cta h2 {
+    font-size: 2rem;
+  }
 
-.clients-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 3rem;
-    justify-items: center;
-    align-items: center;
-    padding: 2rem 0;
-}
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-.client-item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Clean transition */
-    transition: opacity 0.2s;
-    opacity: 0.7;
-}
-
-.client-item:hover {
-    opacity: 1;
-}
-
-.client-item img {
-    max-width: 120px;
-    max-height: 60px;
-    width: auto;
-    height: auto;
-    /* Make logos white/monochrome to fit dark theme */
-    filter: grayscale(100%) brightness(200%);
-    object-fit: contain;
-}
-
-.service-line {
-    padding: 6rem 0;
-}
-
-.service-description {
-    font-size: 1.25rem;
-    max-width: 800px;
-    margin-top: 1rem;
-    color: var(--text-secondary);
-}
-
-.service-divider {
-    border: 0;
-    height: 1px;
-    background: var(--border);
-    margin: 0;
-}
-
-.contact-cta {
-    padding: 8rem 0;
-    text-align: center;
-}
-
-.contact-cta h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.contact-cta p {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.footer-address {
-    line-height: 1.6;
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 }
 
 /* Ensure existing styles are preserved */

@@ -1,3 +1,100 @@
+/* ... existing styles ... */
+/* Append to existing css */
+
+.hero-quote {
+    border-left: 2px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.hero-quote blockquote {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-quote cite {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-style: normal;
+}
+
+.clients-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 1rem 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.service-line {
+    padding: 6rem 0;
+}
+
+.service-description {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin-top: 1rem;
+    color: var(--text-secondary);
+}
+
+.service-divider {
+    border: 0;
+    height: 1px;
+    background: var(--border);
+    margin: 0;
+}
+
+.contact-cta {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-address {
+    line-height: 1.6;
+}
+
+/* Ensure existing styles are preserved */
 :root {
   --bg-primary: #0a0a0a;
   --bg-secondary: #171717;
@@ -210,4 +307,98 @@ footer {
   margin-top: 4rem;
   color: var(--text-secondary);
   font-size: 0.9rem;
+}
+
+/* Append New Styles */
+.hero-quote {
+    border-left: 2px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.hero-quote blockquote {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-quote cite {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-style: normal;
+}
+
+.clients-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 1rem 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.service-line {
+    padding: 6rem 0;
+}
+
+.service-description {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin-top: 1rem;
+    color: var(--text-secondary);
+}
+
+.service-divider {
+    border: 0;
+    height: 1px;
+    background: var(--border);
+    margin: 0;
+}
+
+.contact-cta {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-address {
+    line-height: 1.6;
 }

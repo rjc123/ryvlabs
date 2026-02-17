@@ -2,24 +2,57 @@
 <div class="hero">
     <div class="hero-bg"></div>
     <div class="container hero-content">
-        <h1>{{ .Params.heading | default "Future-Proof Technology Transformation" }}</h1>
-        <p>{{ .Params.subheading | default "We design the systems that power tomorrow's enterprises." }}</p>
-        <a href="#services" class="btn">Explore Our Vision</a>
+        <h1>{{ .Params.heading }}</h1>
+        <p>{{ .Params.subheading }}</p>
+        
+        {{ if .Params.hero_quote }}
+        <div class="hero-quote">
+            <blockquote>{{ .Params.hero_quote }}</blockquote>
+            <cite>— {{ .Params.hero_quote_source }}</cite>
+        </div>
+        {{ end }}
+        
+        <a href="#contact" class="btn">Get in touch</a>
     </div>
 </div>
 
-<section id="services" class="container services">
+<section class="container clients-section">
     <div class="section-header">
-        <span class="section-label">Our Capabilities</span>
-        <h2>Designed for Impact</h2>
+        <span class="section-label">Our Clients</span>
+        <h2>Trusted by Public & Private Sectors</h2>
     </div>
-    <div class="grid">
-        {{ range .Params.services }}
-        <div class="card">
-            <h3>{{ .title }}</h3>
-            <p>{{ .description }}</p>
-        </div>
+    <div class="clients-grid">
+        {{ range .Params.clients }}
+        <div class="client-item">{{ replace . "-" " " | title }}</div>
         {{ end }}
     </div>
+</section>
+
+<section id="services" class="container services">
+    {{ range .Params.service_lines }}
+    <div class="service-line">
+        <div class="section-header">
+            <span class="section-label">Service Line</span>
+            <h2>{{ .title }}</h2>
+            <p class="service-description">{{ .description }}</p>
+        </div>
+        
+        <div class="grid">
+            {{ range .sub_services }}
+            <div class="card">
+                <h3>{{ .title }}</h3>
+                <p>{{ .text }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <hr class="service-divider">
+    {{ end }}
+</section>
+
+<section id="contact" class="container contact-cta">
+    <h2>Ready to transform?</h2>
+    <p>If your organisation needs support in understanding digital transformation or venture-building new products, do get in touch.</p>
+    <a href="mailto:contact@ryvlabs.com" class="btn">Contact Us</a>
 </section>
 {{ end }}

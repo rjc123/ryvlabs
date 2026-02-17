@@ -1,6 +1,8 @@
 <header>
     <div class="container nav-wrapper">
-        <a href="/" class="logo">RYV<span>.labs</span></a>
+        <a href="/" class="logo">
+            <img src="{{ "images/ryv-labs-logo.png" | relURL }}" alt="RYV Labs" class="logo-img">
+        </a>
         <nav class="nav-links">
             {{ range .Site.Menus.main }}
             <a href="{{ .URL }}">{{ .Name }}</a>

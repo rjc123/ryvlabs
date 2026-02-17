@@ -1,4 +1,23 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = []
+title = 'RYV Labs'
+theme = 'ryv-design'
+
+[params]
+description = "RYV Labs - Technology Transformation Consultancy"
+
+[[menu.main]]
+name = "Work"
+url = "/work"
+
+[[menu.main]]
+name = "Services"
+url = "/services"
+
+[[menu.main]]
+name = "About"
+url = "/about"
+
+[[menu.main]]
+name = "Contact"
+url = "/contact"

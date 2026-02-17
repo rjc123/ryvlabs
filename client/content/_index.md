@@ -27,6 +27,8 @@ clients:
     logo: "images/clients/tfgm.png"
   - name: "Channel 4"
     logo: "images/clients/channel-4.png"
+  - name: "Department for Transport"
+    logo: "images/clients/dft.png"
   - name: "Ofqual"
     logo: "images/clients/ofqual.png"
 

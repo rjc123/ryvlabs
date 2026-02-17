@@ -23,7 +23,9 @@
     </div>
     <div class="clients-grid">
         {{ range .Params.clients }}
-        <div class="client-item">{{ replace . "-" " " | title }}</div>
+        <div class="client-item">
+            <img src="{{ .logo | relURL }}" alt="{{ .name }}" title="{{ .name }}">
+        </div>
         {{ end }}
     </div>
 </section>

@@ -159,7 +159,8 @@ header {
 
 /* Services Grid */
 .services {
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .section-header {
@@ -234,7 +235,8 @@ footer {
 }
 
 .clients-section {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     border-bottom: 1px solid var(--border);
     background: rgba(255, 255, 255, 0.02);
 }
@@ -291,7 +293,8 @@ footer {
 }
 
 .contact-cta {
-    padding: 8rem 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     text-align: center;
 }
 
